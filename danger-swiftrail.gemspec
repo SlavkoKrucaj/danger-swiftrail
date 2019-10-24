@@ -5,12 +5,12 @@ require 'swiftrail/gem_version.rb'
 
 Gem::Specification.new do |spec|
   spec.name          = 'danger-swiftrail'
-  spec.version       = Swiftrail::VERSION
+  spec.version       = Swiftrail::PLUGIN_VERSION
   spec.authors       = ['Slavko Krucaj']
   spec.email         = ['slavko.krucaj@gmail.com']
   spec.description   = %q{A short description of danger-swiftrail.}
   spec.summary       = %q{A longer description of danger-swiftrail.}
-  spec.homepage      = 'https://github.com/Slavko Krucaj/danger-swiftrail'
+  spec.homepage      = 'https://github.com/SlavkoKrucaj/danger-swiftrail'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
@@ -20,8 +20,10 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'danger-plugin-api', '~> 1.0'
 
+  spec.add_dependency 'swiftrail'
+
   # General ruby development
-  spec.add_development_dependency 'bundler', '~> 1.3'
+  spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake', '~> 10.0'
 
   # Testing support

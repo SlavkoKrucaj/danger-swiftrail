@@ -1,3 +1,3 @@
 module Swiftrail
-  VERSION = "0.0.1".freeze
+  PLUGIN_VERSION = "0.0.1".freeze
 end
